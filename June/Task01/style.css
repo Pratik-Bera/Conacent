@@ -1,0 +1,13 @@
+body {
+    margin : 0px;
+    padding : 0px;
+    background-color: #f8f9fa;
+}
+.container-form {
+  max-width: 600px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
