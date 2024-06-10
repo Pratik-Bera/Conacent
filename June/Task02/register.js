@@ -1,4 +1,4 @@
-let dataList = [];
+let dataList = JSON.parse(localStorage.getItem('dataList'));
 function onFormSubmit(event){
     event.preventDefault();
     let data=readData();
