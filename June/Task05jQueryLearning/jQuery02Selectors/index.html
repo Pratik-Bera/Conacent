@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Learn</title>
+    <script src="../jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="txt">
+    </div>
+    <ul>
+        <li>Hi    </li>
+        <li>Hello    </li>
+        <li>Hello world    </li>
+    </ul>
+    <h1>Sagar Bera</h1>
+    <h1 id="heading">Mousumi Bera</h1>
+    <nav>DJ</nav>
+
+    <script>
+        $(document).ready(function(){
+            $("nav").text("Django");        // add by element Selector
+            $('ul li:first').hide();        // can do also in that manner
+            $("#heading").append(" is my mom"); //using id selector
+            $(".txt").text("this text is comming from class selector.");  // using class selector
+     
+        })
+    </script>
+    
+</body>
+</html>

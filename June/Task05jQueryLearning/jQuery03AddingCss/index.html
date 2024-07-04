@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-3.7.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hello Guys! This is the page of adding css of this page using jQuery.</h1>
+    <button id="btn">click me</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("h1").css("backgroundColor","red");   // single css proparty adding
+                $("h1").css({
+                    "backgroundColor":"yellow",
+                    "fontWeight":"bold",
+                    "fontSize":"50px"
+                });
+            })
+        })
+
+    </script>
+</body>
+</html>

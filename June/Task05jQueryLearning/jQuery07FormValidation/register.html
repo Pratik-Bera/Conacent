@@ -7,57 +7,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Concert+One&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="register.css">
+    <script src="../jquery-3.7.1.js"></script>
     <title>Add-User</title>
 </head>
 <body>
-    <div class="navigation">
-        <button class="hamburger" onclick="show()">
-            <div id="bar1" class="bar"></div>
-            <div id="bar2" class="bar"></div>
-            <div id="bar3" class="bar"></div>
-        </button>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Add User</a></li>
-                <li><a href="users.html">User Details</a></li>
-                <li><a href="#">Payments</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </div>
-
     <div class="container">
         <div class="content">
             <h2 class="text-center">Registration Form</h2>
-            <form id="user-reg" onSubmit="onSubmit(event);">
+            <form id="user-reg">
 
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="off">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="off">
                 </div>
 
                 <div class="form-group">
                     <label>Gender</label>
                     <div id="gender" class="gender-radio">
-                        <input type="radio" id="male" name="gender" value="male" required>
+                        <input type="radio" id="male" name="gender" value="male">
                         <label for="male">Male</label>
-                        <input type="radio" id="female" name="gender" value="female" required>
+                        <input type="radio" id="female" name="gender" value="female">
                         <label for="female">Female</label>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="religion">Religion</label>
-                    <select id="religion" name="religion" required>
+                    <select id="religion" name="religion" >
                         <option value="">Select your religion</option>
                         <option value="hindu">Hindu</option>
                         <option value="muslim">Muslim</option>
@@ -67,14 +50,19 @@
 
                 <div class="form-group">
                     <label for="user-id">User id</label>
-                    <input type="text" id="user-id" name="userName" placeholder="Choose your user name" required>
+                    <input type="text" id="user-id" name="userName" placeholder="Choose your user name">
                 </div>
 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Create new password" required>
+                    <input type="password" id="password" name="password" placeholder="Create new password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Cconfirm password">
                 </div>
                 <p class="txt">Already have an account? <a class="anc" href="login.html">login</a></p>
+                <div class="outbox"><p></p></div>
 
                 <button type="submit" class="form-btn">Register</button>
             </form>
@@ -84,6 +72,6 @@
 
     
 
-    <script src="js/register.js"></script>
+    <script src="register.js"></script>
 </body>
 </html>

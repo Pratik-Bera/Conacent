@@ -1,0 +1,24 @@
+*{
+    padding : 0px;
+    margin : 0px;
+    text-align: center;
+}
+
+h1{
+    margin : 10px;
+}
+
+.topic{
+    padding : 10px;
+    border : 1px solid black;
+    background-color: #102C57;
+    color : white;
+}
+
+.desc{
+    padding : 10px;
+    border : 1px solid black;
+    background-color: #1679AB;
+    color : white;
+    display : none;
+}

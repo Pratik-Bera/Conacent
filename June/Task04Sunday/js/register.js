@@ -13,10 +13,7 @@ function onSubmit(event){
     storeLocally(dataList);
     // console.log(data);
     // console.log(dataList);
-    console.log("Submitted");
-    
-    
-    
+    alert("Your form has been submitted");   
 }
 
 function clearForm(event){
